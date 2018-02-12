@@ -7,15 +7,18 @@
     "start": "node index.js",
     "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku": "node_modules/.bin/heroku"
+    "heroku": "node_modules/.bin/heroku",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^4.17.0",
     "nodemon": "^1.14.12"
   },
   "dependencies": {
     "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "heroku": "^0.2.0",
     "heroku-cli": "^6.15.24",

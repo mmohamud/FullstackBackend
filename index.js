@@ -5,6 +5,8 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cors = require('cors')
 
+require('dotenv').config()
+
 app.use(cors())
 app.use(bodyParser.json())
 app.use(express.static('build'))
